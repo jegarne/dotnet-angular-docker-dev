@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Nextyce!
+  </h1>
+</div>
+<div style="width: 400px; margin: 10px auto;">
+<p *ngFor='let report of weatherReports | async'>
+  <b>{{report.date | date :'short'}}</b><br /> 
+  {{report["summary"]}} - C: {{report["temperatureC"]}} F: {{report["temperatureF"]}} 
+</p>
+</div>
+
+<router-outlet></router-outlet>

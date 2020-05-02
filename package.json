@@ -1,0 +1,8 @@
+{
+    "name": "nextyce",
+    "version": "0.0.0",
+    "scripts": {
+        "predocker:debug": "cd ./nextyce-ui && npm install",
+        "docker:debug": "docker-compose up --build"
+    }
+}
